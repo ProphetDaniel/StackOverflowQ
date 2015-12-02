@@ -19,10 +19,10 @@ void objectFactory (void)
 		aFirstClassObject2 = new FirstClass(/*x*/1, /*y*/3, /*z*/2); 
 	FirstClass*
 		aFirstClassObject = new FirstClass(/*x*/3, /*y*/4, /*z*/5); 
-	aVector<FirstClass*>*
-		aSecondClassObject_firstclassList = new aVector<FirstClass*>(aFirstClassObject, aFirstClassObject2); 
+	FirstClass*
+		aSecondClassObject_firstclassArray[2] = {aFirstClassObject, aFirstClassObject2};
 	SecondClass*
-		aSecondClassObject = new SecondClass(aSecondClassObject_firstclassList, /*H*/1, /*W*/2); 
+		aSecondClassObject = new SecondClass(aSecondClassObject_firstclassArray, /*H*/1, /*W*/2);
 	FourthClass*
 		AFourthClassObject = new FourthClass(/*secondclass*/aSecondClassObject, /*title*/"titleOfFourthClass"); 
 	/*********************************************************************************************/

@@ -17,10 +17,10 @@
 // Start of user code Provide additional source members here for class SecondClass.
 // End of user code
 
-SecondClass::SecondClass(aVector<FirstClass*>*  givenFirstclassList, int givenH, int givenW)
+SecondClass::SecondClass(FirstClass* givenFirstclassArray[], int givenH, int givenW)
 
 {
-	this->firstclassList = givenFirstclassList;
+	this->firstclassArray = givenFirstclassArray;
 
 	this->H = givenH;
 
@@ -30,7 +30,7 @@ SecondClass::SecondClass(aVector<FirstClass*>*  givenFirstclassList, int givenH,
 
 SecondClass::~SecondClass()
 {
-	delete firstclassList;
+	delete[] firstclassArray;
 }
 
 void SecondClass::load()

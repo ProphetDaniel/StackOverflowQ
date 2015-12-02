@@ -47,14 +47,14 @@ class SecondClass
     *
     *  Association Name: , attribute: firstclass
     */
-    public: aVector<FirstClass*>* firstclassList;
+    public: FirstClass** firstclassArray;
 
 
    /******************************************
 	************** CONSTRUCTOR ***************
 	******************************************/
     public: 
-	SecondClass(aVector<FirstClass*>*  givenFirstclassList, int givenH, int givenW);
+	SecondClass(FirstClass* givenFirstclassArray[], int givenH, int givenW);
 
    /******************************************
 	************** DESTRUCTOR ****************
