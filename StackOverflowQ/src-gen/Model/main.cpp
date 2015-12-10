@@ -2,9 +2,6 @@
 #include "..\Model\FourthClass.hpp"
 #include "..\Model\SecondClass.hpp"
 
-//#include <iostream>
-#include <stdint.h>
-
 #include "Resources\MemCheck.hpp" // Must appear last!
 
 using namespace std;
