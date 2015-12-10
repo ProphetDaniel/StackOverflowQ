@@ -5,7 +5,7 @@
  */
 //package Model;
 
-#include "ThirdClass.hpp"
+#include "..\Model\ThirdClass.hpp"
 #include "Resources\PrimitiveTypes.hpp"
 #include "Resources\DataTypes.hpp"
 #include "Resources\Enumerations.hpp"
@@ -14,8 +14,8 @@
 // End of user code
 
 /**
- * 
- * 
+ * \authors Daniel Kaminski de Souza
+ * \authors Marcelo Giesteira Campani
  */
 /** 
  * Forward class declarations

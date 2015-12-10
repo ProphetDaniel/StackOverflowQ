@@ -13,8 +13,8 @@
 // End of user code
 
 /**
- * 
- * 
+ * \authors Daniel Kaminski de Souza
+ * \authors Marcelo Giesteira Campani
  */
 /** 
  * Forward class declarations

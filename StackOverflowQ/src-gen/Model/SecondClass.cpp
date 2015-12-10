@@ -11,8 +11,8 @@
 // End of user code
 
 /**
- * 
- * 
+ * \authors Daniel Kaminski de Souza
+ * \authors Marcelo Giesteira Campani
  */
 // Start of user code Provide additional source members here for class SecondClass.
 // End of user code
@@ -30,6 +30,7 @@ SecondClass::SecondClass(aVector<FirstClass*>*  givenFirstclassList, int givenH,
 
 SecondClass::~SecondClass()
 {
+	firstclassList->erase();
 	delete firstclassList;
 }
 

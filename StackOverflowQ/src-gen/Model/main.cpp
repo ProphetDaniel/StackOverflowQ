@@ -2,7 +2,18 @@
 #include "..\Model\FourthClass.hpp"
 #include "..\Model\SecondClass.hpp"
 
+//#include <iostream>
+#include <stdint.h>
+
+#include <iostream>
+#include <vector>
+#include <cstring>
+#include "Resources\MemCheck.hpp" // Must appear last!
 using namespace std;
+#define notSpecified_A		nullptr
+#define notSpecified_B		nullptr
+#define toAssociateAfterwards	nullptr
+#define ownerWillClose		nullptr
 
 //Start of user code Main custom area
 //End of user code
@@ -15,6 +26,7 @@ using namespace std;
 /*************************************************************************************************/
 void objectFactory (void)
 {
+	MEM_ON();
 	FirstClass*
 		aFirstClassObject2 = new FirstClass(/*x*/1, /*y*/3, /*z*/2); 
 	FirstClass*
@@ -31,6 +43,8 @@ void objectFactory (void)
 
 	//Start of user code custom area One.
 	//End of user code
+	delete AFourthClassObject;
+	MEM_OFF();
 }
 
 /*************************************************************************************************/
@@ -38,7 +52,9 @@ void objectFactory (void)
 /*************************************************************************************************/
 int main (int argc, char* argv[]){
 	objectFactory();
-
+#ifndef MEMCHECK_H
 	//Start of user code custom area Two.
 	//End of user code
+#endif
+	return 0;	
 }
