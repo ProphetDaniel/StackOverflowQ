@@ -1,6 +1,7 @@
 #ifndef _VECTORTEMPLATE_HPP_
 #define _VECTORTEMPLATE_HPP_
 
+//Author: Daniel Kaminski de Souza
 
 #include "PrimitiveTypes.hpp"
 #include <stdint.h>
@@ -25,6 +26,13 @@ public:
 	virtual ~aVector()
 	{
 		delete[] itsArray;
+	}
+	void erase()
+	{
+		for (uint8_t index=0; index< size; index++)
+		{
+			delete itsArray[index];
+		}
 	}
 	T* getArray(void){
 		return itsArray;

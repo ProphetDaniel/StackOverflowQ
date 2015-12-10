@@ -5,7 +5,7 @@
  */
 //package Model;
 
-#include "ThirdClass.hpp"
+#include "..\Model\ThirdClass.hpp"
 #include "Resources\PrimitiveTypes.hpp"
 #include "Resources\DataTypes.hpp"
 #include "Resources\Enumerations.hpp"
